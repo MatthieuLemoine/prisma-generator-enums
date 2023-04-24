@@ -1,4 +1,7 @@
 {
+  "name": "prisma-generator-enums",
+  "author": "MatthieuLemoine",
+  "license": "MIT",
   "private": true,
   "workspaces": [
     "packages/*"

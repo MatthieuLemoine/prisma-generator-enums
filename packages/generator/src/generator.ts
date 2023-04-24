@@ -17,15 +17,22 @@ generatorHandler({
     }
   },
   onGenerate: async (options: GeneratorOptions) => {
-    options.dmmf.datamodel.enums.forEach(async (enumInfo) => {
-      const tsEnum = genEnum(enumInfo)
+    const enums = await Promise.all(
+      options.dmmf.datamodel.enums.map(async (enumInfo) => {
+        const constEnum = genEnum(enumInfo)
 
-      const writeLocation = path.join(
-        options.generator.output?.value!,
-        `${enumInfo.name}.ts`,
-      )
+        const writeLocation = path.join(
+          options.generator.output?.value!,
+          `${enumInfo.name}.ts`,
+        )
 
-      await writeFileSafely(writeLocation, tsEnum)
-    })
+        await writeFileSafely(writeLocation, constEnum)
+        return enumInfo.name
+      }),
+    )
+    await writeFileSafely(
+      path.join(options.generator.output?.value!, `index.ts`),
+      enums.map((enumName) => `export * from './${enumName}';`).join('\n'),
+    )
   },
 })
