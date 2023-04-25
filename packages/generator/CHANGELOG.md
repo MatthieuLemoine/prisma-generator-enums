@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/MatthieuLemoine/prisma-generator-enums/compare/v1.1.0...v1.2.0) (2023-04-25)
+
+
+### Bug Fixes
+
+* **test:** fix dep version ([6856a66](https://github.com/MatthieuLemoine/prisma-generator-enums/commit/6856a664c3b9c46e231c01eb54e4f020e9671cb1))
+
+
+### Features
+
+* **README:** update description ([c209d7c](https://github.com/MatthieuLemoine/prisma-generator-enums/commit/c209d7c8653e0db8cfa5f9580591ad6c62e4b197))
+
 # [1.1.0](https://github.com/MatthieuLemoine/prisma-generator-enums/compare/v1.0.0...v1.1.0) (2023-04-25)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "prisma-generator-enums",
   "description": "Create an external file with all prisma enums. Allows to use prisma enums on web without the entire runtime being bundled.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/generator.js",
   "license": "MIT",
   "bin": {
