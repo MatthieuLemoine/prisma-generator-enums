@@ -20,12 +20,10 @@ generatorHandler({
     const enums = await Promise.all(
       options.dmmf.datamodel.enums.map(async (enumInfo) => {
         const constEnum = genEnum(enumInfo)
-
         const writeLocation = path.join(
           options.generator.output?.value!,
           `${enumInfo.name}.ts`,
         )
-
         await writeFileSafely(writeLocation, constEnum)
         return enumInfo.name
       }),
