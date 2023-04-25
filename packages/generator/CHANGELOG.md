@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/MatthieuLemoine/prisma-generator-enums/compare/v1.2.0...v1.3.0) (2023-04-25)
+
+
+### Features
+
+* **generator:** generate enum type ([6ad48cb](https://github.com/MatthieuLemoine/prisma-generator-enums/commit/6ad48cb1fa91392f98a67031dac5f6c8394e9869))
+
 # [1.2.0](https://github.com/MatthieuLemoine/prisma-generator-enums/compare/v1.1.0...v1.2.0) (2023-04-25)
 
 
